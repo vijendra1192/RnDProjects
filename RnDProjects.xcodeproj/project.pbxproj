@@ -14,6 +14,11 @@
 		A01F3CDD215F2085000E5A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01F3CDC215F2085000E5A6D /* Assets.xcassets */; };
 		A01F3CE0215F2085000E5A6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A01F3CDE215F2085000E5A6D /* LaunchScreen.storyboard */; };
 		A01F3CEB215F2085000E5A6D /* RnDProjectsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F3CEA215F2085000E5A6D /* RnDProjectsTests.swift */; };
+		A03B8FEA2165B60F00656923 /* MyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03B8FE92165B60F00656923 /* MyProfileTableViewCell.swift */; };
+		A03B8FEC2165B62700656923 /* CollectionDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03B8FEB2165B62700656923 /* CollectionDataTableViewCell.swift */; };
+		A03B8FEE2165B63800656923 /* AnswerDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03B8FED2165B63800656923 /* AnswerDataTableViewCell.swift */; };
+		A03B8FF02165B7D200656923 /* CustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03B8FEF2165B7D200656923 /* CustomVC.swift */; };
+		A0846747215F4230009DD062 /* StatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0846746215F4230009DD062 /* StatusTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		A01F3CE6215F2085000E5A6D /* RnDProjectsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RnDProjectsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01F3CEA215F2085000E5A6D /* RnDProjectsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RnDProjectsTests.swift; sourceTree = "<group>"; };
 		A01F3CEC215F2085000E5A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A03B8FE92165B60F00656923 /* MyProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewCell.swift; sourceTree = "<group>"; };
+		A03B8FEB2165B62700656923 /* CollectionDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataTableViewCell.swift; sourceTree = "<group>"; };
+		A03B8FED2165B63800656923 /* AnswerDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerDataTableViewCell.swift; sourceTree = "<group>"; };
+		A03B8FEF2165B7D200656923 /* CustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVC.swift; sourceTree = "<group>"; };
+		A0846746215F4230009DD062 /* StatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +89,10 @@
 		A01F3CD1215F2082000E5A6D /* RnDProjects */ = {
 			isa = PBXGroup;
 			children = (
+				A03B8FE82165B5E900656923 /* CustomCell */,
 				A01F3CD2215F2082000E5A6D /* AppDelegate.swift */,
 				A01F3CD4215F2082000E5A6D /* ViewController.swift */,
+				A0846746215F4230009DD062 /* StatusTableViewCell.swift */,
 				A01F3CD6215F2082000E5A6D /* Main.storyboard */,
 				A01F3CDC215F2085000E5A6D /* Assets.xcassets */,
 				A01F3CDE215F2085000E5A6D /* LaunchScreen.storyboard */,
@@ -97,6 +109,17 @@
 				A01F3CEC215F2085000E5A6D /* Info.plist */,
 			);
 			path = RnDProjectsTests;
+			sourceTree = "<group>";
+		};
+		A03B8FE82165B5E900656923 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				A03B8FE92165B60F00656923 /* MyProfileTableViewCell.swift */,
+				A03B8FEB2165B62700656923 /* CollectionDataTableViewCell.swift */,
+				A03B8FED2165B63800656923 /* AnswerDataTableViewCell.swift */,
+				A03B8FEF2165B7D200656923 /* CustomVC.swift */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +224,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01F3CDB215F2082000E5A6D /* RnDProjects.xcdatamodeld in Sources */,
+				A03B8FEE2165B63800656923 /* AnswerDataTableViewCell.swift in Sources */,
 				A01F3CD5215F2082000E5A6D /* ViewController.swift in Sources */,
+				A03B8FEA2165B60F00656923 /* MyProfileTableViewCell.swift in Sources */,
 				A01F3CD3215F2082000E5A6D /* AppDelegate.swift in Sources */,
+				A03B8FF02165B7D200656923 /* CustomVC.swift in Sources */,
+				A0846747215F4230009DD062 /* StatusTableViewCell.swift in Sources */,
+				A03B8FEC2165B62700656923 /* CollectionDataTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XPBV485VNW;
 				INFOPLIST_FILE = RnDProjects/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -380,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XPBV485VNW;
 				INFOPLIST_FILE = RnDProjects/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
